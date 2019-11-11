@@ -97,6 +97,7 @@ class DashboardChartBlock(DashboardBlock):
 
         :return: The chart (or None, if it can't be rendered)
         :rtype: shuup.admin.dashboard.charts.Chart|None
+        some changes
         """
         return None
 
