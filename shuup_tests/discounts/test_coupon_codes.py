@@ -309,7 +309,7 @@ def test_usage_limit(rf):
 def test_coupon_code_generation(rf):
     original_code = "random"
     coupon = CouponCode.objects.create(code=original_code, active=True)
-    coupon.code = CouponCode.generate_code()
+    #coupon.code = CouponCode.generate_code()
     coupon.save()
     assert coupon.code != original_code
 
