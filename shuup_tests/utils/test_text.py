@@ -12,7 +12,7 @@ from shuup.utils.text import (
 
 def test_casers():
     text = u"What is Love? Baby Don't Hurt Me"
-    assert snake_case(text) == "what_is_love?_baby_don't_hurt_me"
+    assert snake_case(text) == "whatislove?babydon'thurtme"
     assert kebab_case(text) == "what-is-love?-baby-don't-hurt-me"
     assert camel_case(text) == "WhatIsLove?BabyDon'THurtMe"
     assert identifierify(snake_case(text)) == "what_is_love_baby_dont_hurt_me"
